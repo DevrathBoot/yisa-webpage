@@ -1,0 +1,26 @@
+<svg width="542" height="295" viewBox="0 0 542 295" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Yisa Logo - Using the provided logo as reference -->
+  <g id="yisa-logo">
+    <!-- Text YISA -->
+    <path d="M34 80L82 180L130 80H174L104 220H60L34 80Z" fill="#000"/>
+    <rect x="172" y="80" width="44" height="140" fill="#000"/>
+    <path d="M240 80C270 80 290 100 290 130C290 150 280 165 265 170C285 175 300 190 300 220C300 250 280 270 240 270H200V80H240ZM240 110H244V150H240C255 150 265 140 265 130C265 120 255 110 240 110ZM240 180H244V240H240C255 240 270 230 270 220C270 210 255 180 240 180Z" fill="#000"/>
+    <path d="M320 80L342 145L364 80H408L368 175L408 270H364L342 205L320 270H276L316 175L276 80H320Z" fill="#000"/>
+    
+    <!-- House icon -->
+    <g transform="translate(380, 40)">
+      <path d="M80 50L40 90V160H120V90L80 50Z" fill="#D4524A"/>
+      <rect x="50" y="100" width="60" height="60" fill="#D4524A"/>
+      <rect x="65" y="115" width="10" height="10" fill="#000"/>
+      <rect x="85" y="115" width="10" height="10" fill="#000"/>
+      <rect x="105" y="115" width="10" height="10" fill="#000"/>
+      <rect x="65" y="135" width="10" height="10" fill="#000"/>
+      <rect x="85" y="135" width="10" height="10" fill="#000"/>
+      <rect x="105" y="135" width="10" height="10" fill="#000"/>
+      <rect x="75" y="25" width="10" height="25" fill="#D4524A"/>
+    </g>
+    
+    <!-- Text FINANCE SOLUTIONS -->
+    <text x="34" y="260" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#000">FINANCE SOLUTIONS</text>
+  </g>
+</svg>
