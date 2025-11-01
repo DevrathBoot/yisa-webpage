@@ -55,8 +55,39 @@ export default function ContactUs() {
         }, 3000);
     };
 
+    // Structured data for Contact Us
+    const structuredData = {
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "name": "Contact Yisa Finance Solutions",
+        "description": "Contact Yisa Finance Solutions for expert financial advice and services. Phone, email, and office location information.",
+        "mainEntity": {
+            "@type": "Organization",
+            "name": "Yisa Finance Solutions",
+            "telephone": "+1-555-123-4567",
+            "email": "info@yisafinance.com",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "123 Finance Street, Suite 456",
+                "addressLocality": "Business District",
+                "addressRegion": "State",
+                "postalCode": "12345",
+                "addressCountry": "US"
+            },
+            "openingHours": [
+                "Mo-Fr 09:00-18:00",
+                "Sa 10:00-14:00"
+            ]
+        }
+    };
+
     return (
         <div className="min-h-screen bg-white">
+            {/* Structured Data */}
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+            />
             {/* Navigation */}
             <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-gray-100 z-50">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

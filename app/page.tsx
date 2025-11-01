@@ -15,10 +15,71 @@ import {
   Mail,
   MapPin
 } from "lucide-react";
+import { homeContent, siteConfig } from "@/content";
 
 export default function Home() {
+  // Structured data for homepage using content config
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": siteConfig.siteName,
+    "url": siteConfig.domain,
+    "logo": `${siteConfig.domain}/yisa-logo.svg`,
+    "description": siteConfig.description,
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": `${siteConfig.address.street}, ${siteConfig.address.suite}`,
+      "addressLocality": siteConfig.address.city,
+      "addressRegion": siteConfig.address.state,
+      "postalCode": siteConfig.address.zipCode,
+      "addressCountry": siteConfig.address.country
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": siteConfig.phone.replace(/\s+/g, '-').replace(/[()]/g, ''),
+      "contactType": "customer service",
+      "email": siteConfig.email
+    },
+    "serviceArea": "Australia",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Financial Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Home Loans",
+            "description": "Tailored financing solutions for homeownership goals"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Commercial Loans",
+            "description": "Strategic financial support for business growth"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Development Finance",
+            "description": "Comprehensive financing for development projects"
+          }
+        }
+      ]
+    }
+  };
+
   return (
     <div className="min-h-screen bg-white">
+      {/* Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-gray-100 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -45,16 +106,16 @@ export default function Home() {
               className="hidden md:flex space-x-8"
             >
               <Link href="/" className="text-gray-900 hover:text-red-600 transition-colors">
-                Home
+                {homeContent.navigation.home}
               </Link>
               <Link href="/services" className="text-gray-700 hover:text-red-600 transition-colors">
-                Services
+                {homeContent.navigation.services}
               </Link>
               <Link href="/about-us" className="text-gray-700 hover:text-red-600 transition-colors">
-                About Us
+                {homeContent.navigation.about}
               </Link>
               <Link href="/contact-us" className="text-gray-700 hover:text-red-600 transition-colors">
-                Contact Us
+                {homeContent.navigation.contact}
               </Link>
             </motion.div>
 
@@ -67,7 +128,7 @@ export default function Home() {
                 href="/contact-us"
                 className="bg-red-600 text-white px-6 py-2 rounded-full hover:bg-red-700 transition-colors"
               >
-                Get Started
+                {homeContent.navigation.cta}
               </Link>
             </motion.div>
           </div>
@@ -84,13 +145,12 @@ export default function Home() {
               transition={{ duration: 0.8 }}
             >
               <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                Empowering Your{" "}
-                <span className="text-red-600">Financial Decisions</span>{" "}
-                with Expert Guidance
+                {homeContent.hero.title}{" "}
+                <span className="text-red-600">{homeContent.hero.titleHighlight}</span>{" "}
+                {homeContent.hero.titleSuffix}
               </h1>
               <p className="text-xl text-gray-600 mt-6 leading-relaxed">
-                Navigate your financial journey with confidence. Yisa Finance Solutions
-                provides personalized strategies and expert guidance to achieve your financial goals.
+                {homeContent.hero.subtitle}
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mt-8">
                 <motion.div
@@ -102,7 +162,7 @@ export default function Home() {
                     className="bg-red-600 text-white px-8 py-4 rounded-full font-semibold 
                              hover:bg-red-700 transition-colors flex items-center justify-center"
                   >
-                    Start Your Journey Today
+                    {homeContent.hero.primaryCTA}
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Link>
                 </motion.div>
@@ -116,7 +176,7 @@ export default function Home() {
                              font-semibold hover:border-red-600 hover:text-red-600 transition-colors 
                              flex items-center justify-center"
                   >
-                    Learn More
+                    {homeContent.hero.secondaryCTA}
                   </Link>
                 </motion.div>
               </div>
@@ -130,22 +190,12 @@ export default function Home() {
             >
               <div className="bg-linear-to-r from-red-500 to-red-600 rounded-2xl p-8 text-white">
                 <div className="grid grid-cols-2 gap-6">
-                  <div className="text-center">
-                    <div className="text-3xl font-bold">500+</div>
-                    <div className="text-red-100">Happy Clients</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-3xl font-bold">$50M+</div>
-                    <div className="text-red-100">Loans Approved</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-3xl font-bold">15+</div>
-                    <div className="text-red-100">Years Experience</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-3xl font-bold">98%</div>
-                    <div className="text-red-100">Success Rate</div>
-                  </div>
+                  {homeContent.stats.items.map((stat, index) => (
+                    <div key={index} className="text-center">
+                      <div className="text-3xl font-bold">{stat.number}</div>
+                      <div className="text-red-100">{stat.label}</div>
+                    </div>
+                  ))}
                 </div>
               </div>
             </motion.div>

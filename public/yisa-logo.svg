@@ -1,26 +1,98 @@
-<svg width="542" height="295" viewBox="0 0 542 295" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- Yisa Logo - Using the provided logo as reference -->
-  <g id="yisa-logo">
-    <!-- Text YISA -->
-    <path d="M34 80L82 180L130 80H174L104 220H60L34 80Z" fill="#000"/>
-    <rect x="172" y="80" width="44" height="140" fill="#000"/>
-    <path d="M240 80C270 80 290 100 290 130C290 150 280 165 265 170C285 175 300 190 300 220C300 250 280 270 240 270H200V80H240ZM240 110H244V150H240C255 150 265 140 265 130C265 120 255 110 240 110ZM240 180H244V240H240C255 240 270 230 270 220C270 210 255 180 240 180Z" fill="#000"/>
-    <path d="M320 80L342 145L364 80H408L368 175L408 270H364L342 205L320 270H276L316 175L276 80H320Z" fill="#000"/>
-    
-    <!-- House icon -->
-    <g transform="translate(380, 40)">
-      <path d="M80 50L40 90V160H120V90L80 50Z" fill="#D4524A"/>
-      <rect x="50" y="100" width="60" height="60" fill="#D4524A"/>
-      <rect x="65" y="115" width="10" height="10" fill="#000"/>
-      <rect x="85" y="115" width="10" height="10" fill="#000"/>
-      <rect x="105" y="115" width="10" height="10" fill="#000"/>
-      <rect x="65" y="135" width="10" height="10" fill="#000"/>
-      <rect x="85" y="135" width="10" height="10" fill="#000"/>
-      <rect x="105" y="135" width="10" height="10" fill="#000"/>
-      <rect x="75" y="25" width="10" height="25" fill="#D4524A"/>
-    </g>
-    
-    <!-- Text FINANCE SOLUTIONS -->
-    <text x="34" y="260" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#000">FINANCE SOLUTIONS</text>
-  </g>
+<svg x="0" y="0" width="420" height="133" viewBox="0 0 420 133" version="1.1" xmlns="http://www.w3.org/2000/svg" style="display: block;margin-left: auto;margin-right: auto;">
+<defs>
+<clipPath id="c_1"><path d="M0,0H420V133H0Z"/></clipPath>
+<clipPath id="c0"><path d="M26.8 111.1V31.6H168.3v79.5Z"/></clipPath>
+<clipPath id="c1"><path d="M18.8 125V99.8H279V125Z"/></clipPath>
+<clipPath id="c2"><path d="M214.1 97.3V69.6h.7c6.5 .1 12.6 4 14.9 9.2q0 .1 0 .1c.6 1.4 .9 2.9 .9 4.5c0 1.6-.4 3.2-1 4.6c-2.2 5.4-8.2 9.2-14.8 9.3Z"/></clipPath>
+<clipPath id="c3"><path d="M210.1 107.3c-2.9 0-5.9-1.2-8.5-2.9c-9.9-6.6-17-24.6-17.1-45V21.7h51.1V59.5c-.1 20.2-7.3 38.2-17 45q-.1 0-.2 .1c-2.6 1.7-5.4 2.7-8.3 2.7Z"/></clipPath>
+<clipPath id="c4"><path d="M217.1 102H152l32.5-80.8L217.1 102Z"/></clipPath>
+<clipPath id="c5"><path d="M150.7 107.5l40.9-64.9l40.9 64.9Z"/></clipPath>
+<clipPath id="c6"><path d="M207.3 49.9V37.8h-7.9V22.7h7.9V10.6h10.2V22.7h7.9V37.8h-7.9V49.9Z"/></clipPath>
+<clipPath id="c7"><path d="M178.8 70.2V64.1h6.5v6.1Z"/></clipPath>
+<clipPath id="c8"><path d="M188.6 70.2V64.1h6.5v6.1Z"/></clipPath>
+<clipPath id="c9"><path d="M198 70.5V64.1h6.5v6.4Z"/></clipPath>
+<clipPath id="ca"><path d="M178.8 77.9v-6h6.5v6Z"/></clipPath>
+<clipPath id="cb"><path d="M188.6 78.2V71.9h6.5v6.3Z"/></clipPath>
+<clipPath id="cc"><path d="M198 78.2V71.9h6.5v6.3Z"/></clipPath>
+<clipPath id="cd"><path d="M-153.1 407.5V-165.9H420.4V407.5Z"/></clipPath>
+<clipPath id="ce"><path d="M18.8 125V10.3H279V125Z"/></clipPath>
+
+<style>
+text { white-space: pre; }
+path, image { pointer-events: none; }
+
+.s0{font-size:59.08px;font-family:TANHEADLINE-Regular_1j;fill:#000;}
+.s1{font-size:19.74px;font-family:Montserrat-Bold_s;fill:#000;}
+
+.g0{fill:#FFF;}
+.g1{fill:#FF3131;}
+.g2{fill:#000;}
+
+</style>
+
+</defs>
+<path d="M0 0V133H420V0Z" fill="#FFFFFF" stroke="none"/>
+<g clip-path="url(#c_1)">
+<g clip-path="url(#cd)">
+<path d="M-152.8-165.6H420.1V407.2H-152.8V-165.6Z" class="g0"/>
+<path d="M-152.8-165.6H420.1V407.2H-152.8V-165.6Z" class="g0"/>
+</g>
+<g clip-path="url(#ce)">
+<g clip-path="url(#c0)">
+<text clip-path="url(#c0)" x="28.1" y="92" dx="0 6.7 6.7" class="s0">YIS </text>
+</g>
+<g clip-path="url(#c2)">
+<path d="M214.1 97.3V69.6h16.5V97.3H214.1Z" class="g0"/>
+</g>
+<g clip-path="url(#c3)">
+<path d="M184.5 21.7h51.1v85.6H184.5V21.7Z" class="g1"/>
+</g>
+<g clip-path="url(#c4)">
+<path d="M152.4 21.7h64.3v80H152.4v-80Z" class="g1"/>
+</g>
+<g clip-path="url(#c5)">
+<path d="M151.1 43h81.1v64.3H151.1V43Z" class="g0"/>
+</g>
+<g clip-path="url(#c6)">
+<path d="M199.7 11h25.4V49.6H199.7V11Z" class="g1"/>
+</g>
+<g clip-path="url(#c1)">
+<text clip-path="url(#c1)" x="19.8" y="118.7" dx="0 2.2 2.2 2.2 2.2 2.2 2.2 2.2 2.2 2.2 2.2 2.2 2.2 2.2 2.2 2.2 2.2" class="s1">FINANCE SOLUTIONS </text>
+</g>
+<g clip-path="url(#c7)">
+<path d="M179.1 64.5h5.8v5.4h-5.8V64.5Z" class="g2"/>
+</g>
+<g clip-path="url(#c8)">
+<path d="M188.9 64.5h5.9v5.4h-5.9V64.5Z" class="g2"/>
+</g>
+<g clip-path="url(#c9)">
+<path d="M198.3 64.5h5.9v5.7h-5.9V64.5Z" class="g2"/>
+</g>
+<g clip-path="url(#ca)">
+<path d="M179.1 72.2h5.8v5.4h-5.8V72.2Z" class="g2"/>
+</g>
+<g clip-path="url(#cb)">
+<path d="M188.9 72.2h5.9v5.7h-5.9V72.2Z" class="g2"/>
+</g>
+<g clip-path="url(#cc)">
+<path d="M198.3 72.2h5.9v5.7h-5.9V72.2Z" class="g2"/>
+</g>
+</g>
+
+</g>
+
+<style>
+
+@font-face {
+	font-family: Montserrat-Bold_s;
+	src: url("fonts/Montserrat-Bold_s.woff") format("woff");
+}
+
+@font-face {
+	font-family: TANHEADLINE-Regular_1j;
+	src: url("fonts/TANHEADLINE-Regular_1j.woff") format("woff");
+}
+
+</style>
+
 </svg>

@@ -18,8 +18,44 @@ import {
 } from "lucide-react";
 
 export default function AboutUs() {
+    // Structured data for About Us
+    const structuredData = {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Yisa Finance Solutions",
+        "url": "https://yisafinance.com",
+        "logo": "https://yisafinance.com/yisa-logo.svg",
+        "description": "Expert financial services company with 15+ years experience, helping 500+ clients with $50M+ in successful loans. Specializing in home loans, commercial finance, and financial planning.",
+        "foundingDate": "2009",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+1-555-123-4567",
+            "contactType": "customer service",
+            "email": "info@yisafinance.com",
+            "availableLanguage": "English"
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "123 Finance Street, Suite 456",
+            "addressLocality": "Business District",
+            "addressRegion": "State",
+            "postalCode": "12345",
+            "addressCountry": "US"
+        },
+        "sameAs": [
+            "https://linkedin.com/company/yisafinance",
+            "https://facebook.com/yisafinance",
+            "https://instagram.com/yisafinance"
+        ]
+    };
+
     return (
         <div className="min-h-screen bg-white">
+            {/* Structured Data */}
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+            />
             {/* Navigation */}
             <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-gray-100 z-50">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

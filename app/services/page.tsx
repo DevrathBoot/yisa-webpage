@@ -16,10 +16,45 @@ import {
     MapPin,
     ArrowLeft
 } from "lucide-react";
+import { servicesContent, siteConfig } from "@/content";
 
 export default function Services() {
+    // Structured data for services
+    const structuredData = {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Yisa Finance Solutions Services",
+        "description": "Comprehensive financial services including home loans, commercial loans, development finance, personal finance, financial planning, and loan management.",
+        "provider": {
+            "@type": "Organization",
+            "name": "Yisa Finance Solutions",
+            "url": "https://yisafinance.com",
+            "logo": "https://yisafinance.com/yisa-logo.svg",
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+1-555-123-4567",
+                "contactType": "customer service",
+                "email": "info@yisafinance.com"
+            }
+        },
+        "serviceType": [
+            "Home Loans",
+            "Commercial Loans",
+            "Development Finance",
+            "Personal Finance",
+            "Financial Planning",
+            "Loan Management"
+        ],
+        "areaServed": "Australia"
+    };
+
     return (
         <div className="min-h-screen bg-white">
+            {/* Structured Data */}
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+            />
             {/* Navigation */}
             <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-gray-100 z-50">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -263,7 +298,7 @@ export default function Services() {
                                 className="text-center"
                             >
                                 <div className="bg-red-600 text-white w-16 h-16 rounded-full flex items-center 
-                               justify-center text-2xl font-bold mx-auto mb-4">
+                                   justify-center text-2xl font-bold mx-auto mb-4">
                                     {step.step}
                                 </div>
                                 <h3 className="font-bold text-gray-900 mb-2">{step.title}</h3>
